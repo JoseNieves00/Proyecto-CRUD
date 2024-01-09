@@ -401,6 +401,7 @@ function cargarUsuarios(users) {
         const errorH2 = document.createElement('h2')
         errorH2.textContent = "No se encontraron coincidencias"
         card_cont.appendChild(errorH2)
+        errorH2.className = "errorFilter"
     }
 
 }
@@ -562,6 +563,10 @@ sig_page.addEventListener("click", () => {
                     users.push(user);
                 }
             }
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
             cargarUsuarios(users);
         } else {
             page == anteriorPage
@@ -595,6 +600,10 @@ ant_page.addEventListener("click", () => {
                 }
             }
             cargarUsuarios(users);
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         } else {
             page = anteriorPage
         }
@@ -612,6 +621,10 @@ a_pag1.addEventListener("click", () => {
                 users.push(user);
             }
         }
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
         cargarUsuarios(users);
 
     }
@@ -628,6 +641,10 @@ a_pag2.addEventListener("click", () => {
                 users.push(user);
             }
         }
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
         cargarUsuarios(users);
     } else {
         buscarInput.value = ""
@@ -654,3 +671,4 @@ btn_cerrarsc.addEventListener("click", () => {
         }
     });
 }) 
+
