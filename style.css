@@ -399,7 +399,7 @@ html {
     align-items: center;
 }
 
-@media (max-width:390px) {
+@media (min-width:320px) {
     
     .login-form{
         width: 80%;
@@ -466,3 +466,72 @@ html {
     }
     
 }
+
+@media (min-width:321px) {
+    
+    .login-form{
+        width: 80%;
+    }
+    
+    .login-form .password-inpt{
+        width: 75%;
+    }
+    .password-div{
+        width: 86%;
+    }
+    
+    .login-btn{
+        width: 87%;
+    }
+    
+    .header{
+        width: 80%;
+    }
+    
+    
+    .search{
+        justify-content: center;
+    }
+    
+    .search-input{
+        width: 335px;
+    }
+
+    
+    .cards-usuarios{
+        min-height: 70vh;
+    }
+    
+    .card{
+        width: 350px;
+        height: 360px;
+        gap: 20px;
+    }
+    
+    .informacion-box{
+        width: 300px;
+
+    }
+
+    
+    .informacion-box .exit-img{
+        width: 60px;
+    }
+    
+    
+    .datos-box{
+        width: 300px;
+    }
+    
+    .errorFilter{
+        width: 80%;
+        text-align: center;
+    }
+
+    
+    .paginacion{
+        width: 90%;
+    }
+    
+}
+
