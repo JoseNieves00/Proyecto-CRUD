@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Crud Usuarios</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="login-cont">
+            <div class="background"></div>
+            <form class="login-form" method="post">
+                <p>Iniciar Sesion</p>
+                <input type="email" required class="email-inpt" placeholder="E-mail" name="email">
+                <div class="password-div">
+                    <input type="password" required class="password-inpt" placeholder="Password" name="contrasena">
+                    <img src="img/visible.png" class="img-visible">
+                    <img src="img/no_visible.png" class="img-novisible">
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+        <div class="loading-cont">
+            <span class="loader"></span>
+        </div>
+        <div class="inicio-cont">
+            <div class="blur"></div>
+            <div class="informacion-box"></div>
+            <div class="header">
+                <p class="usuario-header"></p>
+                <button class="cerrar-sesion">Cerrar Sesion</button>
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Busqueda Global:" class="search-input">
+            </div>
+            <div class="usuarios-cont">
+
+                <div class="cards-usuarios">
+                    <!-- <div class="card">
+                        <div class="avatar"></div>
+                        <p class="name"></p>
+                        <p class="Genero"></p>
+                    </div> -->
+                </div>
+                <div class="paginacion">
+                    <a title="Anterior" class="ant-pag">← Anterior Pagina</a>
+                    <a title="Ir a pagina 1" class="a-pag1">1</a>
+                    <a title="Ir a pagina 2" class="a-pag2">2</a>
+                    <a title="Siguiente" class="sig-pag">Sigiente Pagina →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="logica.js"></script>
+</body>
+
+</html>
